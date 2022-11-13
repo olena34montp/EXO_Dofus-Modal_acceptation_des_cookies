@@ -1,0 +1,14 @@
+@mixin reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin position ($absolute: false) {
+    @if $absolute != false {
+        position: absolute;
+    } @else {
+        position: relative;
+    }
+}
